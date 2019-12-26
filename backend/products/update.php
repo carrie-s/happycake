@@ -13,9 +13,25 @@ if(isset($_POST["EditForm"]) && $_POST["EditForm"] == "UPDATE"){
    }else{
     $filename=$_POST["old_picture"];
    }
-  $sql="UPDATE products SET picture=:picture, name=:name, price=:price, updated_at=:updated_at WHERE productID=:productID";
+   if(isset($_FILES["picture1"]["name"])&& $_FILES["picture1"]["name"] != null){
+    $filename1=$_FILES['picture1']['name'];
+    $file_path="../../uploads/products/".$_FILES['picture1']['name'];
+    move_uploaded_file($_FILES["picture1"]["tmp_name"],$file_path);
+  }else{
+    $filename1=$_POST["old_picture1"];
+  }
+  if(isset($_FILES["picture2"]["name"])&& $_FILES["picture2"]["name"] != null){
+    $filename2=$_FILES['picture2']['name'];
+    $file_path="../../uploads/products/".$_FILES['picture2']['name'];
+    move_uploaded_file($_FILES["picture2"]["tmp_name"],$file_path);
+  }else{
+    $filename2=$_POST["old_picture2"];
+  } 
+  $sql="UPDATE products SET picture=:picture,picture1=:picture1,picture2=:picture2, name=:name, price=:price, updated_at=:updated_at WHERE productID=:productID";
   $sth=$db->prepare($sql);
   $sth->bindParam(":picture",$filename,PDO::PARAM_STR);
+  $sth->bindParam(":picture1",$filename1,PDO::PARAM_STR);
+  $sth->bindParam(":picture2",$filename2,PDO::PARAM_STR);
   $sth->bindParam(":name",$_POST["name"],PDO::PARAM_STR);
   $sth->bindParam(":price",$_POST["price"],PDO::PARAM_STR);
   $sth->bindParam(":updated_at",$_POST['updated_at'],PDO::PARAM_STR);
@@ -50,11 +66,23 @@ if(isset($_POST["EditForm"]) && $_POST["EditForm"] == "UPDATE"){
             <li class="breadcrumb-item active">編輯<?php echo $_GET["productname"];?></li>
           </ul>
           <form id="products_update" class="text-right" method="post" action="update.php" enctype="multipart/form-data">
-            <div class="form-group row"> <label for="inputmailh" class="col-2 col-form-label">產品圖片</label>
+            <div class="form-group row"> <label for="picture" class="col-2 col-form-label">產品圖片一</label>
               <div class="col-10 text-left">
                 <img class="mb-2" src="../../uploads/products/<?php echo $one_products["picture"]?>" width="200" alt="">
                 <input type="hidden" name="old_picture" value="<?php echo $one_products['picture'];?>">  
-                <input type="file" class="form-control-file" id="inputmailh" name="picture"> </div>
+                <input type="file" class="form-control-file" id="picture" name="picture"> </div>
+            </div>
+            <div class="form-group row"> <label for="picture1" class="col-2 col-form-label">產品圖片二</label>
+              <div class="col-10 text-left">
+                <img class="mb-2" src="../../uploads/products/<?php echo $one_products["picture1"]?>" width="200" alt="">
+                <input type="hidden" name="old_picture1" value="<?php echo $one_products['picture1'];?>">  
+                <input type="file" class="form-control-file" id="picture1" name="picture1"> </div>
+            </div>
+            <div class="form-group row"> <label for="picture2" class="col-2 col-form-label">產品圖片三</label>
+              <div class="col-10 text-left">
+                <img class="mb-2" src="../../uploads/products/<?php echo $one_products["picture2"]?>" width="200" alt="">
+                <input type="hidden" name="old_picture2" value="<?php echo $one_products['picture2'];?>">  
+                <input type="file" class="form-control-file" id="picture2" name="picture2"> </div>
             </div>
             <div class="form-group row"> <label for="name" class="col-2 col-form-label">產品名稱</label>
               <div class="col-10">

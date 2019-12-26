@@ -1,3 +1,4 @@
+<?php require_once("is_login.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +24,7 @@
 
 <body>
 <?php require_once('template/navbar.php'); ?>
-<?php require_once("is_login.php");?>
+
 <?php
 $query2=$db->query("SELECT * FROM customer_orders WHERE customer_orderID=".$_GET['customer_orderID']);
 $order=$query2->fetch(PDO::FETCH_ASSOC);

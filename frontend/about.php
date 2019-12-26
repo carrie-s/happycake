@@ -2,7 +2,7 @@
 //session_start();
 require('../function/connection.php'); ?>
 <?php 
-$query = $db->query("SELECT * FROM page WHERE pageID=1");
+$query = $db->query("SELECT * FROM page WHERE pageID=2");
 $about = $query->fetch(PDO::FETCH_ASSOC);
 
 ?>

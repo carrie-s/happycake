@@ -1,3 +1,4 @@
+<?php require_once("is_login.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +26,7 @@
 
 <body>
 <?php require_once('template/navbar.php'); ?>
-<?php require_once("is_login.php");?>
+
 <?php
 $query=$db->query("SELECT * FROM customer_orders WHERE memberID='".$_SESSION['member']['memberID']."' ORDER BY created_at DESC");
 $orders=$query->fetchAll(PDO::FETCH_ASSOC);
@@ -131,7 +132,7 @@ $orders=$query->fetchAll(PDO::FETCH_ASSOC);
                                                 ?>
                                                 
                                                 <form  id="formCreditCard" method="post" accept-charset="UTF-8"
-                                                action="Payment_PHP/example/sample_Credit_CreateOrder.php" style="display: inline-block;">
+                                                action="Payment_PHP/example/sample_Credit_CreateOrder.php" style="display: inline-block;" target="_blank">
                                                 <input type="hidden" name="MerchantTradeNo" value="<?php echo $order['order_no'];?>" />
                                                
                                                 <input type="hidden" name="MerchantTradeDate" value="<?php echo $order_date; ?>" />

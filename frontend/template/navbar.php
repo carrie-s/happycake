@@ -1,5 +1,7 @@
 <?php 
+if(!isset($_SESSION)){
 session_start();
+}
 require_once("../function/connection.php");
 $query=$db->query("SELECT * FROM product_categories ORDER BY product_categoryID ASC");
 $categories=$query->fetchAll(PDO::FETCH_ASSOC);

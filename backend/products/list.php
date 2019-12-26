@@ -21,7 +21,7 @@ $Total_Rows=count($products);
           <h1 class="">產品管理</h1>
           <ul class="breadcrumb">
             <li class="breadcrumb-item"> <a href="#"><i class="fa fa-home"></i> 主控台</a> </li>
-            <li class="breadcrumb-item active">產品管理</li>
+            <li class="breadcrumb-item active"><a href="../product_categories/list.php">產品管理</a></li>
             <li class="breadcrumb-item active"><?php echo $_GET["name"];?></li>
           </ul>
           <a class="btn btn-light mb-2" href="create.php?level1_ID=<?php echo $_GET['level1_ID']?>&name=<?php echo $_GET['name']?>">新增一筆</a>

@@ -52,9 +52,9 @@ $Total_orders=count($customer_orders);
           <!-- <form class="form-inline"> -->
             <div class="form-row">
 
-                <div class="col-auto">
+                <!-- <div class="col-auto">
                   <a class="btn btn-light mb-2" href="#">新增一筆</a>
-                </div>
+                </div> -->
                 <div class="col-auto col-md-3">
                   <select class="form-control form-group" id="status" name="status">
                       <option value="all" <?php if($_GET["status"]=="all"){ echo "selected";}?>>全部訂單</option>

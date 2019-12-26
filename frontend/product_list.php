@@ -102,18 +102,18 @@ $products=$query ->fetchAll(PDO::FETCH_ASSOC);
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="product.php?categoryID=<?php echo $one_product["product_categoryID"]; ?>&productID=<?php echo $one_product["productID"]; ?>">
-                                                <img src="../uploads/products/<?php echo $one_product["picture"]; ?>" alt="" class="img-responsive">
+                                                <img src="../uploads/products/<?php echo $one_product["picture"]; ?>" alt="" class="img-responsive" style="width: 100%;height:121px;object-fit:cover;">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="product.php?categoryID=<?php echo $one_product["product_categoryID"]; ?>&productID=<?php echo $one_product["productID"]; ?>">
-                                                <img src="../uploads/products/<?php echo $one_product["picture"]; ?>" alt="" class="img-responsive">
+                                                <img src="../uploads/products/<?php echo $one_product["picture"]; ?>" alt="" class="img-responsive" style="width: 100%;height:121px;object-fit:cover;">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="product.php?categoryID=<?php echo $one_product["product_categoryID"]; ?>&productID=<?php echo $one_product["productID"]; ?>" class="invisible">
-                                    <img src="../uploads/products/<?php echo $one_product["picture"]; ?>" alt="" class="img-responsive">
+                                    <img src="../uploads/products/<?php echo $one_product["picture"]; ?>" alt="" class="img-responsive" style="width: 100%;height:121px;object-fit:cover;">
                                 </a>
                                 <div class="text">
                                     <h3><a href="product.php?categoryID=<?php echo $one_product["product_categoryID"]; ?>&productID=<?php echo $one_product["productID"]; ?>"><?php echo $one_product["name"]; ?></a></h3>

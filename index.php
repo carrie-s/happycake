@@ -225,16 +225,16 @@ _________________________________________________________ -->
                 <div class="col-md-12">
                     <div id="main-slider">
                         <div class="item">
-                            <img src="images/main-slider1.jpg" alt="" class="img-responsive">
+                            <img src="images/main-slider1.jpg" alt="" class="img-responsive" style="width: 100%;height:650px;object-fit:cover;">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/main-slider2.jpg" alt="">
+                            <img class="img-responsive" src="images/main-slider2.jpg" alt="" style="width: 100%;height:650px;object-fit:cover;">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/main-slider3.jpg" alt="">
+                            <img class="img-responsive" src="images/main-slider3.jpg" alt="" style="width: 100%;height:650px;object-fit:cover;">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/main-slider4.jpg" alt="">
+                            <img class="img-responsive" src="images/main-slider4.jpg" alt="" style="width: 100%;height:650px;object-fit:cover;">
                         </div>
                     </div>
                     <!-- /#main-slider -->
@@ -308,18 +308,18 @@ _________________________________________________________ -->
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="frontend/product.php?categoryID=<?php echo $product["product_categoryID"]; ?>&productID=<?php echo $product["productID"]; ?>">
-                                                <img src="uploads/products/<?php echo $product["picture"]; ?>" alt="" class="img-responsive">
+                                                <img src="uploads/products/<?php echo $product["picture"]; ?>" alt="" class="img-responsive" style="width: 100%;height:121px;object-fit:cover;">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="frontend/product.php?categoryID=<?php echo $product["product_categoryID"]; ?>&productID=<?php echo $product["productID"]; ?>">
-                                                <img src="uploads/products/<?php echo $product["picture"]; ?>" alt="" class="img-responsive">
+                                                <img src="uploads/products/<?php echo $product["picture"]; ?>" alt="" class="img-responsive" style="width: 100%;height:121px;object-fit:cover;">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="frontend/product.php?categoryID=<?php echo $product["product_categoryID"]; ?>&productID=<?php echo $product["productID"]; ?>" class="invisible">
-                                    <img src="uploads/products/<?php echo $product["picture"]; ?>" alt="" class="img-responsive">
+                                    <img src="uploads/products/<?php echo $product["picture"]; ?>" alt="" class="img-responsive" style="width: 100%;height:121px;object-fit:cover;">
                                 </a>
                                 <div class="text">
                                     <h3><a href="frontend/product.php?categoryID=<?php echo $product["product_categoryID"]; ?>&productID=<?php echo $product["productID"]; ?>"><?php echo $product["name"]; ?></a></h3>

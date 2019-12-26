@@ -104,16 +104,18 @@ $category_name=$query ->fetch(PDO::FETCH_ASSOC);
                             </div>
 
                            
+                            <?php if($one_product["status"] == 1){ ?>
                                     <div class="ribbon new">
                                         <div class="theribbon">NEW</div>
                                         <div class="ribbon-background"></div>
                                     </div>
-                             
+                                <?php }elseif($one_product["status"] == 2){ ?>
                                 <!-- /.ribbon -->
                                     <div class="ribbon sale">
                                         <div class="theribbon">SALE</div>
                                         <div class="ribbon-background"></div>
                                     </div>
+                                <?php } ?>
                                
 
                         </div>
@@ -138,21 +140,27 @@ $category_name=$query ->fetch(PDO::FETCH_ASSOC);
                                 </div>
                             </form>
                             <div class="row" id="thumbs">
+                            <?php if (isset($one_product["picture"])&&$one_product["picture"]!=null){ ?>
                                 <div class="col-xs-4">
-                                    <a href="../uploads/products/wood-food-bread.jpg" class="thumb">
-                                        <img src="../uploads/products/wood-food-bread.jpg" alt="" class="img-responsive">
+                                    <a href="../uploads/products/<?php echo $one_product["picture"]; ?>" class="thumb">
+                                        <img src="../uploads/products/<?php echo $one_product["picture"]; ?>" alt="" class="img-responsive">
                                     </a>
                                 </div>
+                            <?php } ?>
+                            <?php if (isset($one_product["picture1"])&&$one_product["picture1"]!=null){ ?>
                                 <div class="col-xs-4">
-                                    <a href="../uploads/products/wood-food-bread.jpg" class="thumb">
-                                        <img src="../uploads/products/wood-food-bread.jpg" alt="" class="img-responsive">
+                                    <a href="../uploads/products/<?php echo $one_product["picture1"]; ?>" class="thumb">
+                                        <img src="../uploads/products/<?php echo $one_product["picture1"]; ?>" alt="" class="img-responsive">
                                     </a>
                                 </div>
+                                <?php } ?>    
+                            <?php if (isset($one_product["picture2"])&&$one_product["picture2"]!=null){ ?>
                                 <div class="col-xs-4">
-                                    <a href="../uploads/products/wood-food-bread.jpg" class="thumb">
-                                        <img src="../uploads/products/wood-food-bread.jpg" alt="" class="img-responsive">
+                                    <a href="../uploads/products/<?php echo $one_product["picture2"]; ?>" class="thumb">
+                                        <img src="../uploads/products/<?php echo $one_product["picture2"]; ?>" alt="" class="img-responsive">
                                     </a>
                                 </div>
+                            <?php } ?>
                             </div>
                         </div>
 

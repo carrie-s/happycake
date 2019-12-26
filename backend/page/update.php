@@ -2,15 +2,15 @@
 require_once('../is_login.php');
 require_once("../../function/connection.php");
 if(isset($_POST["EditForm"]) && $_POST["EditForm"] == "UPDATE"){
-  $sql="UPDATE page SET content=:content,updated_at=:updated_at WHERE pageID=1";
+  $sql="UPDATE page SET content=:content,updated_at=:updated_at WHERE pageID=2";
   $sth=$db->prepare($sql);
   $sth->bindParam(":content",$_POST["content"],PDO::PARAM_STR);
   $sth->bindParam(":updated_at",$_POST['updated_at'],PDO::PARAM_STR);
   $sth->execute();
 
-  header("Location: update.php?pageID=1&Edit=success");
+  header("Location: update.php?pageID=2&Edit=success");
 }else{
-$query=$db->query("SELECT * FROM page WHERE pageID=1");
+$query=$db->query("SELECT * FROM page WHERE pageID=2");
 $one_page=$query->fetch(PDO::FETCH_ASSOC);
 }
 ?>

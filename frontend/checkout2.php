@@ -1,4 +1,4 @@
-
+<?php require_once("is_login.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +27,7 @@
 <body>
 
 <?php require_once('template/navbar.php'); ?>
-<?php require_once("is_login.php");?>
+
 <?php 
 $_SESSION['order']['name'] = $_POST['name'];
 $_SESSION['order']['phone'] = $_POST['phone'];

@@ -1,4 +1,4 @@
-
+<?php require_once("is_login.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +27,7 @@
 <body>
 
 <?php require_once('template/navbar.php'); ?>
-<?php require_once("is_login.php");?>
+
 <?php
 if($_SESSION['order']['delivery'] == 100){
     $receive_method ="宅配";

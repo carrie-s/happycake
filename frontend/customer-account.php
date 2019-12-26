@@ -1,3 +1,4 @@
+<?php require_once("is_login.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,9 +23,8 @@
 </head>
 
 <body>
-
 <?php require_once('template/navbar.php'); ?>
-<?php require_once("is_login.php");?>
+
     <!-- *** NAVBAR END *** -->
 
     <div id="all">

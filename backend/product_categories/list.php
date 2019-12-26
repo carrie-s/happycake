@@ -21,7 +21,7 @@ $Total_Rows=count($product_categories);
           <h1 class="">產品管理</h1>
           <ul class="breadcrumb">
             <li class="breadcrumb-item"> <a href="#"><i class="fa fa-home"></i> 主控台</a> </li>
-            <li class="breadcrumb-item active">產品管理</li>
+            <li class="breadcrumb-item active"><a href="../product_categories/list.php">產品管理</a></li>
           </ul>
           <a class="btn btn-light mb-2" href="create.php" >新增分類</a>
           <div class="table-responsive">

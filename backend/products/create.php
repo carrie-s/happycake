@@ -14,13 +14,29 @@ if(isset($_POST["AddForm"]) && $_POST["AddForm"] == "INSERT"){
     $file_path="../../uploads/products/".$_FILES['picture']['name'];
     move_uploaded_file($_FILES["picture"]["tmp_name"],$file_path);
   }else{
-    $filename="cake1.jpg";
+    $filename=null;
+  }
+  if(isset($_FILES["picture1"]["name"])&& $_FILES["picture1"]["name"] != null){
+    $filename1=$_FILES['picture1']['name'];
+    $file_path="../../uploads/products/".$_FILES['picture1']['name'];
+    move_uploaded_file($_FILES["picture1"]["tmp_name"],$file_path);
+  }else{
+    $filename1=null;
+  }
+  if(isset($_FILES["picture2"]["name"])&& $_FILES["picture2"]["name"] != null){
+    $filename2=$_FILES['picture2']['name'];
+    $file_path="../../uploads/products/".$_FILES['picture2']['name'];
+    move_uploaded_file($_FILES["picture2"]["tmp_name"],$file_path);
+  }else{
+    $filename2=null;
   }
 
-  $sql = "INSERT INTO products (product_categoryID, picture, name, price, description, created_at) VALUES (:product_categoryID, :picture, :name, :price, :description, :created_at)";
+  $sql = "INSERT INTO products (product_categoryID, picture,picture1,picture2, name, price, description, created_at) VALUES (:product_categoryID, :picture,:picture1,:picture2, :name, :price, :description, :created_at)";
   $sth=$db->prepare($sql);
   $sth->bindparam(":product_categoryID",$_POST['product_categoryID'],PDO::PARAM_INT);
   $sth->bindparam(":picture",$filename,PDO::PARAM_STR);
+  $sth->bindparam(":picture1",$filename1,PDO::PARAM_STR);
+  $sth->bindparam(":picture2",$filename2,PDO::PARAM_STR);
   $sth->bindparam(":name",$_POST["name"],PDO::PARAM_STR);
   $sth->bindparam(":price",$_POST["price"],PDO::PARAM_STR);
   $sth->bindparam(":description",$_POST["description"],PDO::PARAM_STR);
@@ -52,9 +68,17 @@ if(isset($_POST["AddForm"]) && $_POST["AddForm"] == "INSERT"){
             <li class="breadcrumb-item active">新增一筆</li>
           </ul>
           <form id="products_create" class="text-right" method="post" action="create.php" enctype="multipart/form-data">
-            <div class="form-group row"> <label for="inputmailh" class="col-2 col-form-label">產品圖片</label>
+            <div class="form-group row"> <label for="inputmailh" class="col-2 col-form-label">產品圖片一</label>
               <div class="col-10">
                 <input type="file" class="form-control-file" id="inputmailh" name="picture"> </div>
+            </div>
+            <div class="form-group row"> <label for="picture1" class="col-2 col-form-label">產品圖片二</label>
+              <div class="col-10">
+                <input type="file" class="form-control-file" id="picture1" name="picture1"> </div>
+            </div>
+            <div class="form-group row"> <label for="picture2" class="col-2 col-form-label">產品圖片三</label>
+              <div class="col-10">
+                <input type="file" class="form-control-file" id="picture2" name="picture2"> </div>
             </div>
             <div class="form-group row"> <label for="name" class="col-2 col-form-label">產品名稱</label>
               <div class="col-10">
