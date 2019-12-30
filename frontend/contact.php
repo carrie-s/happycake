@@ -35,9 +35,9 @@
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">首頁</a>
+                        <li><a href="../index.php">首頁</a>
                         </li>
-                        <li>Contact</li>
+                        <li>聯絡我們</li>
                     </ul>
 
                 </div>
@@ -54,13 +54,10 @@
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="about.php">關於我們</a>
-                                </li>
-                                <li>
                                     <a href="contact.php">聯絡我們</a>
                                 </li>
                                 <li>
-                                    <a href="faq.php">FAQ</a>
+                                    <a href="faq.php">常見問題</a>
                                 </li>
 
                             </ul>
@@ -73,7 +70,7 @@
 
                     <div class="banner">
                         <a href="#">
-                            <img src="../images/banner.jpg" alt="sales 2014" class="img-responsive">
+                            <img src="../images/ad-banner.jpg" alt="sales 2014" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -82,39 +79,35 @@
 
 
                     <div class="box" id="contact">
-                        <h1>Contact</h1>
+                        <h1>聯絡我們</h1>
 
-                        <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
-                        <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+                        <p class="lead">如對我們產品有任何問題或想進一步了解，歡迎與我們聯絡</p>
+                        <p>我們的客服人員將會迅速為您服務</p>
 
                         <hr>
 
                         <div class="row">
                             <div class="col-sm-4">
                                 <h3><i class="fa fa-map-marker"></i> 門市地點</h3>
-                                <p>13/25 New Avenue
-                                    <br>New Heaven
-                                    <br>45Y 73J
-                                    <br>England
-                                    <br>
-                                    <strong>Great Britain</strong>
+                                <p>320
+                                    <br>桃園市中壢區健行路229號
+                                    
                                 </p>
                             </div>
                             <!-- /.col-sm-4 -->
                             <div class="col-sm-4">
                                 <h3><i class="fa fa-phone"></i> 客服中心</h3>
-                                <p class="text-muted">This number is toll free if calling from Great Britain otherwise we advise you to use the electronic form of communication.</p>
-                                <p><strong>+33 555 444 333</strong>
+                                <p class="text-muted">此為桃園市的免付費電話，如您不在桃園市，可填寫下方聯絡表單，我們的客服人員會盡速與您聯絡。</p>
+                                <p><strong>(03) 2711-1235</strong>
                                 </p>
                             </div>
                             <!-- /.col-sm-4 -->
                             <div class="col-sm-4">
                                 <h3><i class="fa fa-envelope"></i> 線上客服</h3>
-                                <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
+                                <p class="text-muted">如果您有任何問題，可隨時透過Email與客服聯絡，客服收到來信後會儘速為您確認。</p>
                                 <ul>
-                                    <li><strong><a href="mailto:">info@fakeemail.com</a></strong>
+                                    <li><strong><a href="mailto:">happy_cake@cakehouse.com</a></strong>
                                     </li>
-                                    <li><strong><a href="#">Ticketio</a></strong> - our ticketing support platform</li>
                                 </ul>
                             </div>
                             <!-- /.col-sm-4 -->

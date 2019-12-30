@@ -47,25 +47,22 @@
  _________________________________________________________ -->
                     <div class="panel panel-default sidebar-menu">
 
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Pages</h3>
-                        </div>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">聯絡我們</h3>
+                    </div>
 
-                        <div class="panel-body">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li>
-                                    <a href="text.php">關於我們</a>
-                                </li>
-                                <li>
-                                    <a href="contact.php">聯絡我們</a>
-                                </li>
-                                <li>
-                                    <a href="faq.php">FAQ</a>
-                                </li>
+                    <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="contact.php">聯絡我們</a>
+                            </li>
+                            <li>
+                                <a href="faq.php">常見問題</a>
+                            </li>
 
-                            </ul>
+                        </ul>
 
-                        </div>
+                    </div>
                     </div>
 
                     <!-- *** PAGES MENU END *** -->
@@ -73,7 +70,7 @@
 
                     <div class="banner">
                         <a href="#">
-                            <img src="../images/banner.jpg" alt="sales 2014" class="img-responsive">
+                            <img src="../images/ad-banner.jpg" alt="sales 2014" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -82,10 +79,10 @@
 
 
                     <div class="box" id="contact">
-                        <h1>Frequently asked questions</h1>
+                        <h1>常見問題</h1>
 
-                        <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
-                        <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+                        <p class="lead">如對我們產品有任何問題或想進一步了解，歡迎與我們聯絡</p>
+                        <p>我們的客服人員將會迅速為您服務</p>
 
                         <hr>
 
@@ -97,7 +94,7 @@
 
 					    <a data-toggle="collapse" data-parent="#accordion" href="#faq1">
 
-						1. What to do if I have still not received the order?
+						1. 尚未收到商品，該怎麼辦?
 
 					    </a>
 
@@ -105,13 +102,13 @@
                                 </div>
                                 <div id="faq1" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-                                            Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                        <p>您可至我的訂單查詢您的包裹號碼，即可查看網上追蹤包裹的結果。如果顯示包裹已寄送，但您尚未收到包裹。您應首先進行：</p>
                                         <ul>
-                                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                            <li>Aliquam tincidunt mauris eu risus.</li>
-                                            <li>Vestibulum auctor dapibus neque.</li>
+                                            <li>查看是否家人已在您的住址為您簽收包裹</li>
+                                            <li>查看是否包裹可能已被存放在您住所的安全地點</li>
+                                            <li>查看是否有收到取件通知單。如果您未能在家收取包裹，快遞業者會留下通知單說明其聯絡方式，讓您可自行安排重新寄送</li>
                                         </ul>
+                                        <p>如果您無法找到包裹，請告訴我們，我們將為您提供協助。</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +120,7 @@
 
 					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 
-						2. What are the postal rates?
+						2. 運費怎麼算?
 
 					    </a>
 
@@ -131,9 +128,15 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <p>我們有三種配送方式，分別為：宅配、超商取貨付款，以及貨到付款。運費計算方式分別為：</p>
+                                        <ul>
+                                            <li>宅配-$NT100</li>
+                                            <li>超商取貨付款-$NT150</li>
+                                            <li>貨到付款-$NT200</li>
+                                        </ul>
+                                        <p>購物消費滿2000元，即免運費。</p>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +149,7 @@
 
 					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 
-						3. Do you send overseas?
+						3. 有寄送到海外的服務嗎?
 
 					    </a>
 
@@ -154,9 +157,8 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <p>我們的商品皆為當天手工現做，為確保商品品質，我們目前沒有寄送海外的服務。
+                                        </p>
                                     </div>
                                 </div>
                             </div>

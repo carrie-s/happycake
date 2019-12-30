@@ -8,12 +8,11 @@
                         <h4>購物須知</h4>
 
                         <ul>
-                            <li><a href="shopping_rule.php">購物說明</a>
+                            <li><a href="contact.php">聯絡我們</a>
                             </li>
-                            <li><a href="faq.php">FAQ</a>
+                            <li><a href="faq.php">常見問題</a>
                             </li>
-                            <li><a href="contact.php">聯繫客服</a>
-                            </li>
+                            
                         </ul>
 
                         <hr>
@@ -21,12 +20,12 @@
                         <h4>會員專區</h4>
 
                         <ul>
-                        <?php if(isset($_SESSION['member']) && $_SESSION['member'] !=null) { ?>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">會員專區</a>
+                            <?php if(isset($_SESSION["member"]) && $_SESSION['member'] != null){ ?>
+                             <li><a href="customer-account.php">會員專區</a>
                             </li>
                             <li><a href="logout.php">登出</a>
                             </li>
-                            <?php }else{ ?>
+                            <?php }else{?>
                             <li><a href="#" data-toggle="modal" data-target="#login-modal">會員登入</a>
                             </li>
                             <li><a href="register.php">加入會員</a>
@@ -56,15 +55,10 @@
 
                         <h4>門市地點</h4>
 
-                        <p><strong>Cake House Ltd.</strong>
-                            <br>13/25 New Avenue
-                            <br>New Heaven
-                            <br>45Y 73J
-                            <br>England
-                            <br>
-                            <strong>Great Britain</strong>
-                        </p>
-
+                        <p>320
+                                    <br>桃園市中壢區健行路229號
+                                    
+                                </p>
                         <a href="contact.php">前往聯絡我們頁面</a>
 
                         <hr class="hidden-md hidden-lg">
@@ -78,8 +72,8 @@
 
                         <h4>訂閱電子報</h4>
 
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
+                        <p class="text-muted">若想得到我們的最新活動訊息，請輸入您的E-mail，於認證後即可收到我們的電子報。 </p>
+                        <p> 電子報為免費訂閱，無須負擔任何費用。</p>
                         <form>
                             <div class="input-group">
 
@@ -87,7 +81,7 @@
 
                                 <span class="input-group-btn">
 
-			    <button class="btn btn-default" type="button">Subscribe!</button>
+			    <button class="btn btn-default" type="button">訂閱!</button>
 
 			</span>
 

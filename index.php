@@ -57,7 +57,7 @@ $news=$query3->fetchAll(PDO::FETCH_ASSOC);
     <div id="top">
         <div class="container">
             <div class="col-md-6 offer" data-animate="fadeInDown">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">前往加入會員</a>  <a href="#">立即獲得兩百元購物金</a>
+                <a href="frontend/register.php" class="btn btn-success btn-sm" data-animate-hover="shake">前往加入會員</a>  <a href="frontend/register.php">立即獲得兩百元購物金</a>
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
@@ -253,7 +253,7 @@ _________________________________________________________ -->
                                 </div>
 
                                 <h3><a href="#">堅持日本進口的上選原料</a></h3>
-                                <p>We are known to provide best possible service ever</p>
+                                <p>為每一個消費者，堅持用最好的原料</p>
                             </div>
                         </div>
 
@@ -263,7 +263,7 @@ _________________________________________________________ -->
                                 </div>
 
                                 <h3><a href="#">執著費時費工的製作過程</a></h3>
-                                <p>You can check that the height of the boxes adjust when longer text like this one is used in one of them.</p>
+                                <p>為每一個消費者，親自把關每一道程序</p>
                             </div>
                         </div>
 
@@ -273,7 +273,7 @@ _________________________________________________________ -->
                                 </div>
 
                                 <h3><a href="#">帶來無與倫比的輕柔口感</a></h3>
-                                <p>Free returns on everything for 3 months.</p>
+                                <p>堅持把我們最好的產品給每一個你</p>
                             </div>
                         </div>
                     </div>
@@ -436,12 +436,11 @@ _________________________________________________________ -->
                         <h4>購物須知</h4>
 
                         <ul>
-                            <li><a href="frontend/shopping_rule.php">購物說明</a>
+                            <li><a href="contact.php">聯絡我們</a>
                             </li>
-                            <li><a href="frontend/faq.php">FAQ</a>
+                            <li><a href="faq.php">常見問題</a>
                             </li>
-                            <li><a href="frontend/contact.php">聯繫客服</a>
-                            </li>
+                            
                         </ul>
 
                         <hr>
@@ -450,7 +449,7 @@ _________________________________________________________ -->
 
                         <ul>
                             <?php if(isset($_SESSION["member"]) && $_SESSION['member'] != null){ ?>
-                             <li><a href="frontend/customer-account.php" data-toggle="modal" data-target="#login-modal">會員專區</a>
+                             <li><a href="frontend/customer-account.php">會員專區</a>
                             </li>
                             <li><a href="frontend/logout.php">登出</a>
                             </li>
@@ -485,14 +484,10 @@ _________________________________________________________ -->
 
                         <h4>門市地點</h4>
 
-                        <p><strong>Cake House Ltd.</strong>
-                            <br>13/25 New Avenue
-                            <br>New Heaven
-                            <br>45Y 73J
-                            <br>England
-                            <br>
-                            <strong>Great Britain</strong>
-                        </p>
+                        <p>320
+                                    <br>桃園市中壢區健行路229號
+                                    
+                                </p>
 
                         <a href="frontend/contact.php">前往聯絡我們頁面</a>
 
@@ -507,8 +502,8 @@ _________________________________________________________ -->
 
                         <h4>訂閱電子報</h4>
 
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
+                        <p class="text-muted">若想得到我們的最新活動訊息，請輸入您的E-mail，於認證後即可收到我們的電子報。 </p>
+                        <p> 電子報為免費訂閱，無須負擔任何費用。</p>
                         <form>
                             <div class="input-group">
 
@@ -516,7 +511,7 @@ _________________________________________________________ -->
 
                                 <span class="input-group-btn">
 
-			    <button class="btn btn-default" type="button">Subscribe!</button>
+			    <button class="btn btn-default" type="button">訂閱!</button>
 
 			</span>
 

@@ -11,7 +11,7 @@ _________________________________________________________ -->
    <div id="top">
        <div class="container">
            <div class="col-md-6 offer" data-animate="fadeInDown">
-               <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">前往加入會員</a>  <a href="#">立即取得200元購物金!</a>
+               <a href="register.php" class="btn btn-success btn-sm" data-animate-hover="shake">前往加入會員</a>  <a href="register.php">立即取得200元購物金!</a>
            </div>
            <div class="col-md-6" data-animate="fadeInDown">
                <ul class="menu">
