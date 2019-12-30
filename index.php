@@ -44,7 +44,7 @@ $news=$query3->fetchAll(PDO::FETCH_ASSOC);
 
     <script src="js/respond.min.js"></script>
 
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
 
 

@@ -16,6 +16,6 @@
 
  <script src="../js/respond.min.js"></script>
 
- <link rel="shortcut icon" href="../img/favicon.png">
+ <link rel="shortcut icon" href="../favicon.ico">
 
 
